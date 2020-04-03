@@ -1,13 +1,13 @@
 public class BinarySearch {
-    public static int binarySearch(int key, int[] a) {
+    public static int binarySearch(int key, int[] array) {
         //数组必须是有序的
         int lo = 0;
-        int hi = a.length - 1;
+        int hi = array.length - 1;
         while (lo <= hi) {
             int mid = lo + (hi - lo) / 2;
-            if (key < a[mid]) {
+            if (key < array[mid]) {
                 hi = mid - 1;
-            } else if (key > a[mid]) {
+            } else if (key > array[mid]) {
                 lo = mid + 1;
             } else {
                 return mid;
