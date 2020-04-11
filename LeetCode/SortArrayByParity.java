@@ -1,6 +1,7 @@
 package LeetCode;
 
 class SortarrayByParity {
+    //按奇偶排序数组
     public static int[] sortarrayByParity(int[] array) {
         int[] ans = new int[array.length];
         int t = 0;
